@@ -1,15 +1,15 @@
 package com.gmalheiro.spring.boot.test.car;
 
 public class Driver {
-        private Corolla corolla;
+        private Car car;
 
-        public Driver (Corolla corolla) {
-            this.corolla = corolla;
+        public Driver (Car car) {
+            this.car = car;
         }
 
         public void drive () {
-                corolla.accelerate();
-                corolla.stop();
-                corolla.honk();
+                car.accelerate();
+                car.stop();
+                car.honk();
         }
 }
