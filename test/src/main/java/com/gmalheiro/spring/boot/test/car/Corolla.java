@@ -1,5 +1,8 @@
 package com.gmalheiro.spring.boot.test.car;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Corolla implements  Car{
     @Override
     public void accelerate() {
