@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import com.gmalheiro.spring.boot.test.car.Driver;
+import com.gmalheiro.spring.boot.test.enterprise.example.web.MyWebController;
 
 @SpringBootApplication
 public class TestApplication {
@@ -14,6 +15,9 @@ public class TestApplication {
 			= SpringApplication.run(TestApplication.class, args);
 		Driver driver = context.getBean(Driver.class);
 		driver.drive();
+		
+		MyWebController controller = context.getBean(MyWebController.class);
+		System.out.println(controller.returnValueFromBusinessService());
 	}
 
 }
