@@ -5,17 +5,18 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Driver {
-	
-		@Autowired
-        private Car car;
 
-        public Driver (Car car) {
-            this.car = car;
-        }
+	@Autowired
+	private Car car;
 
-        public void drive () {
-                car.accelerate();
-                car.stop();
-                car.honk();
-        }
+	public Driver(Car car) {
+		super();
+		this.car = car;
+	}
+
+	public void drive() {
+		car.accelerate();
+		car.stop();
+		car.honk();
+	}
 }
